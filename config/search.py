@@ -9,7 +9,7 @@ License:    GNU Affero General Public License
             
 GitHub:     https://github.com/GodsScion/Auto_job_applier_linkedIn
 
-version:    24.12.3.10.30
+version:    24.12.29.12.30
 '''
 
 
@@ -70,6 +70,12 @@ in_your_network = False            # True or False, Note: True or False are case
 fair_chance_employer = False       # True or False, Note: True or False are case-sensitive
 
 
+## >>>>>>>>>>> RELATED SETTING <<<<<<<<<<<
+
+# Pause after applying filters to let you modify the search results and filters?
+pause_after_filters = True         # True or False, Note: True or False are case-sensitive
+
+##
 
 
 
@@ -94,8 +100,6 @@ did_masters = True                 # True or False, Note: True or False are case
 # Avoid applying to jobs if their required experience is above your current_experience. (Set value as -1 if you want to apply to all ignoring their required experience...)
 current_experience = 8             # Integers > -2 (Ex: -1, 0, 1, 2, 3, 4...)
 ##
-
-
 
 
 
