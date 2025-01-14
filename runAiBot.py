@@ -7,6 +7,12 @@ Copyright (C) 2024 Sai Vignesh Golla
 License:    GNU Affero General Public License
             https://www.gnu.org/licenses/agpl-3.0.en.html
             
+            
+GitHub:     https://github.com/GodsScion/Auto_job_applier_linkedIn
+
+version:    24.12.3.10.30
+'''
+
 GitHub:     https://github.com/GodsScion/Auto_job_applier_linkedIn
 
 version:    24.12.3.10.30
@@ -991,8 +997,8 @@ def run(total_runs: int) -> int:
     apply_to_jobs(search_terms)
     print_lg("########################################################################################################################\n")
     if not dailyEasyApplyLimitReached:
-        print_lg("Sleeping for 10 min...")
-        sleep(300)
+        print_lg("Sleeping for 20 min...")
+        sleep(900)
         print_lg("Few more min... Gonna start with in next 5 min...")
         sleep(300)
     buffer(3)
