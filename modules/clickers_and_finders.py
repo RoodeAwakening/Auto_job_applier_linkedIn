@@ -47,19 +47,11 @@ def wait_span_click(driver: WebDriver, text: str, time: float=5.0, click: bool=T
 
 def multi_sel(driver: WebDriver, texts: list, time: float=5.0) -> None:
     '''
-    - For each text in the `texts`, tries to find and click `span` element with that text.
-    - Will spend a max of `time` seconds in searching for each element.
+    For each text in the `texts`, tries to find and click `span` element with that text.
     '''
     for text in texts:
-        wait_span_click(driver, text, time)
-        try:
-            button = WebDriverWait(driver,time).until(EC.presence_of_element_located((By.XPATH, './/span[normalize-space(.)="'+text+'"]')))
-            scroll_to_view(driver, button)
-            button.click()
-            buffer(click_gap)
-        except Exception as e:
-            print_lg("Click Failed! Didn't find '"+text+"'")
-            # print_lg(e)
+        wait_span_click(driver, text, time)  # This already handles the click
+        buffer(click_gap)
 
 def multi_sel_noWait(driver: WebDriver, texts: list, actions: ActionChains = None) -> None:
     '''
